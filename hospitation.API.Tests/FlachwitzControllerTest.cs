@@ -1,6 +1,8 @@
+using System;
+
 namespace hospitation.API.Tests;
 
-public class UnitTest1
+public class FlachwitzControllerTest
 {
     [Fact]
     public void GetJokeReturnsProperString()
