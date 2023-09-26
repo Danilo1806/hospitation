@@ -4,7 +4,7 @@ metadata:
   name: my-service
 spec:
   selector:
-    app.kubernetes.io/name: flachwitz-api
+    app: flachwitz-api
   ports:
     - protocol: TCP
       port: 5000
