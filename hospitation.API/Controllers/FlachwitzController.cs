@@ -10,13 +10,6 @@ namespace hospitation.API.Controllers;
 [Route("[controller]")]
 public class FlachwitzController : ControllerBase
 {
-    private readonly ILogger<FlachwitzController> _logger;
-
-    public FlachwitzController(ILogger<FlachwitzController> logger)
-    {
-        _logger = logger;
-    }
-
     [HttpGet(Name = "flachwitz")]
     public IActionResult GetJoke()
     {
