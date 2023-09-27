@@ -1,0 +1,20 @@
+apiVerapiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flachwitz
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: flachwitz-api
+  template:
+    metadata:
+      labels:
+        app: flachwitz-api
+    spec:
+      containers:
+        - name: flachwitz-api
+          image: {{ .Values.image }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
