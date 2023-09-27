@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flachwitz-api
+  name: flachwitz
 spec:
   replicas: 2
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flachwitz-api
-          image: dev/hospitation:latest
+          image: dev/hospitation:v2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

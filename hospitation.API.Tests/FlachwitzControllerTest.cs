@@ -5,8 +5,8 @@ namespace hospitation.API.Tests;
 public class FlachwitzControllerTest
 {
     [Fact]
-    public void GetJokeReturnsProperString()
+    public async Task GetJokeReturnsProperString()
     {
-        
+       
     }
 }
