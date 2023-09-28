@@ -10,7 +10,6 @@ services:
       - "27017:27017"
     networks:
       - mongo-database
-
   mongo-express:
     image: mongo-express:1.0.0-alpha.4
     container_name: mongoui
@@ -20,14 +19,6 @@ services:
       ME_CONFIG_BASICAUTH_PASSWORD: root
     ports:
       - "8080:8081"
-    networks:
-      - mongo-database
-
-  dev/hospitation:
-    image: dev/hospitation:v2
-    container_name: flachwitz-api
-    ports:
-      - "5000:5000"
     networks:
       - mongo-database
 
