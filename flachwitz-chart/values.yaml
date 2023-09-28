@@ -4,6 +4,6 @@
 
 replicas: 2
 
-image: dev/hospitation:v2
+image: dev/hospitation:v3
 
 

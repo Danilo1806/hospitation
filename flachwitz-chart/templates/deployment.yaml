@@ -16,5 +16,9 @@ spec:
         - name: flachwitz-api
           image: {{ .Values.image }}
           imagePullPolicy: IfNotPresent
+          env:
+            - name: ASPNETCORE_URLS
+              value: "http://+:5000"
           ports:
-            - containerPort: 8080
+            - containerPort: 5000
+              protocol: TCP
